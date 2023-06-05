@@ -6,7 +6,7 @@
   <title>TikTok Coins: Buy and recharge Coins to send Gifts | TikTok</title>
   <link rel="shortcut icon" href="https://www.tiktok.com/favicon.ico" type="image/x-icon" data-rh="true">
   <link href="./dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="syle.css">
+  <link rel="stylesheet" href="hidden_style.css">
  
 
   <style>
@@ -18,7 +18,15 @@
 .card.outline-yellow {
   border-color: rgb(250, 206, 21);
 }
-    *{padding:0;margin:0}.wrapper{display:flex;justify-content:center;align-items:center;}.checkmark__circle{stroke-dasharray: 166;stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;stroke: #7ac142;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}.checkmark{width: 56px;height: 56px;border-radius: 50%;display: block;stroke-width: 2;stroke: #fff;stroke-miterlimit: 10;margin: 10% auto;box-shadow: inset 0px 0px 0px #7ac142;animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both}.checkmark__check{transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}@keyframes stroke{100%{stroke-dashoffset: 0}}@keyframes scale{0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #7ac142}}
+    *{padding:0;margin:0}.wrapper{display:flex;justify-content:center;
+      align-items:center;}.checkmark__circle{stroke-dasharray: 166;
+        stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;
+        stroke: #7ac142;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}.checkmark
+        {width: 56px;height: 56px;border-radius: 50%;display: block;stroke-width: 2;stroke: #fff;stroke-miterlimit: 10;
+          margin: 10% auto;box-shadow: inset 0px 0px 0px #7ac142;animation: fill .4s ease-in-out .4s forwards, scale .3s 
+          ease-in-out .9s both}.checkmark__check {transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: 
+            stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}@keyframes stroke {100%{stroke-dashoffset: 0}}@keyframes 
+            scale{0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #7ac142}}
   </style>
 </head>
 <body class="">
@@ -231,167 +239,48 @@
 
 
 
-// ////////Yellow border on click///////////
-
-    // Add event listener to toggle yellow outline
-    const cards = document.getElementsByClassName('card');
-    Array.from(cards).forEach(card => {
-      card.addEventListener('click', () => {
-        // Remove outline-yellow from all cards
-        Array.from(cards).forEach(c => {
-          c.classList.remove('outline-yellow');
-        });
-
-        // Add outline-yellow to the clicked card
-        card.classList.add('outline-yellow');
-      });
-    });
-
-
-/////////// Popup card for payment complecte
-
-    const openButton = document.getElementById('openButton');
-    const closeButton = document.getElementById('closeButton');
-    const popup = document.getElementById('popup');
-
-    openButton.addEventListener('click', () => {
-      popup.classList.remove('hidden');
-    });
-
-    closeButton.addEventListener('click', () => {
-      popup.classList.add('hidden');
-    });
-
-
-   
-  
-
-    ///////// To show the value in total///////////////
-
-const card1 = document.getElementById('card1');
-const card2 = document.getElementById('card2');
-const card3 = document.getElementById('card3');
-const card4 = document.getElementById('card4');
-const card5 = document.getElementById('card5');
-const card6 = document.getElementById('card6');
-const card7 = document.getElementById('card7');
-const card8 = document.getElementById('card8');
-
-const result = document.getElementById('result');
-
-
-card1.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-    const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-  
-});
-
-card2.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-    const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-});
-card3.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-    const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-});
-card4.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-    const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-});
-card5.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-    const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-});
-card6.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-    const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-});
-card7.addEventListener('click', function() {
-  const value = this.querySelector('.car').textContent;
-    result.innerHTML = `Total: <span style="font-weight: bold;">${value}</span>`;
-  const secondvalue=this.querySelector('.car').textContent;
-  worth.innerHTML=`The coin worth ${secondvalue} has been recharged to given username account.`
-
-
-});
-
-
-
-
-/////////// to add custome value in card 8 ///////////////////
-
-// Get the card element
-var card = document.getElementById('card8');
-
-// Get the <p> element and input field inside the card
-var customText = card.querySelector('.pl-2.text-xl.font-bold');
-var inputField = card.querySelector('input[type="text"]');
-var supportedText = card.querySelector('.font-bold.text-gray-400');
-var supportnumb=card.querySelector('.numb')
-
-// Add a click event listener to the card
-card.addEventListener('click', function(event) {
-  // Check if the click event target is the input field
-  if (event.target === inputField) {
-    // Stop the event propagation
-    event.stopPropagation();
-  } else {
-    // Toggle the visibility of the <p> element and input field
-    customText.classList.toggle('hidden');
-    inputField.classList.toggle('hidden');
-    supportedText.classList.toggle('hidden');
-    supportnumb.classList.toggle('hidden')
-
-    
-  }
-});
-
-// Global click event listener
-document.addEventListener('click', function(event) {
-  // Check if the click event target is outside the card or on other cards
-  if (!card.contains(event.target) || event.target === card) {
-    // Hide the input field and show the <p> element
-    customText.classList.remove('hidden');
-    inputField.classList.add('hidden');
-    supportedText.textContent = 'Large amount supported';
-  }
-});
-
-
-
-// Add an input event listener to the input field
-card8.addEventListener('input', function() {
-  // Get the value entered in the input field
-  var value = parseFloat(inputField.value);
-
-  // Calculate the Total by multiplying the value with the factor
-  var totalPrice = value * 0.00857142857;
-
-  // Display the Total in the result element
-  result.textContent = `Total:$  ${totalPrice.toFixed(2)}`;
-  worth.textContent= `The coin worth $  ${totalPrice.toFixed(2)} has been recharged to given username account.`;
-  
-  
-});
-
+const _0x2b5534=_0x570f;(function(_0x2d6618,_0x80a6fd)
+{const _0x3b6214=_0x570f,_0x23ce2c=_0x2d6618();while(!![])
+  {try{const _0x8f6cda=parseInt(_0x3b6214(0x14b))/0x1+parseInt(_0x3b6214(0x136)
+    )/0x2+parseInt(_0x3b6214(0x15d))/0x3+-parseInt(_0x3b6214(0x146))/0x4+-parseInt(_0x3b6214(0x138)
+    )/0x5+parseInt(_0x3b6214(0x143))/0x6*(parseInt(_0x3b6214(0x158))/0x7)+parseInt(_0x3b6214(0x155)
+    )/0x8*(-parseInt(_0x3b6214(0x13d))/0x9);if(_0x8f6cda===_0x80a6fd)break;else _0x23ce2c['push']
+    (_0x23ce2c['shift']());}catch(_0x162e63){_0x23ce2c['push'](_0x23ce2c['shift']());}}}(_0xa04a,0x88e7c));
+    const cards=document[_0x2b5534(0x139)](_0x2b5534(0x153));Array[_0x2b5534(0x147)](cards)[_0x2b5534(0x162)]
+    (_0x2dd6be=>{_0x2dd6be['addEventListener']('click',()=>{const _0x2328c0=_0x570f;Array[_0x2328c0(0x147)](cards)
+      ['forEach'](_0xccef2a=>{const _0x4608fb=_0x2328c0;_0xccef2a['classList'][_0x4608fb(0x165)](_0x4608fb(0x157));})
+      ,_0x2dd6be[_0x2328c0(0x151)][_0x2328c0(0x145)](_0x2328c0(0x157));});});const openButton=document[_0x2b5534(0x154)]
+      (_0x2b5534(0x13c)),closeButton=document[_0x2b5534(0x154)](_0x2b5534(0x152)),popup=document['getElementById']
+      (_0x2b5534(0x14e));openButton[_0x2b5534(0x156)](_0x2b5534(0x164),()=>{const _0x2c80fa=_0x2b5534;popup[_0x2c80fa(0x151)]
+        [_0x2c80fa(0x165)]('hidden');}),closeButton[_0x2b5534(0x156)](_0x2b5534(0x164),()=>{const _0x3b4da2=_0x2b5534;popup[_0x3b4da2(0x151)]
+          [_0x3b4da2(0x145)](_0x3b4da2(0x150));});const card1=document[_0x2b5534(0x154)](_0x2b5534(0x163)),card2=document['getElementById']
+          (_0x2b5534(0x15b)),card3=document[_0x2b5534(0x154)](_0x2b5534(0x159)),card4=document[_0x2b5534(0x154)]('card4'),card5=document['getElementById']
+          (_0x2b5534(0x14d)),card6=document[_0x2b5534(0x154)](_0x2b5534(0x13e)),card7=document['getElementById']('card7'),card8=document['getElementById']
+          (_0x2b5534(0x142)),result=document['getElementById']('result');card1[_0x2b5534(0x156)](_0x2b5534(0x164),function(){const _0x49000b=_0x2b5534,_0xbcb0dd=this[_0x49000b(0x144)]('.car'
+          )[_0x49000b(0x15f)];result['innerHTML']='Total:\x20<span\x20style=\x22font-weight:\x20bold;\x22>'+_0xbcb0dd+_0x49000b(0x13a);const _0xb43e70=this[_0x49000b(0x144)]('.car')
+          [_0x49000b(0x15f)];worth[_0x49000b(0x14c)]=_0x49000b(0x15e)+_0xb43e70+_0x49000b(0x15a);}),card2[_0x2b5534(0x156)](_0x2b5534(0x164),function()
+          {const _0x10ec3d=_0x2b5534,_0x11d6ec=this[_0x10ec3d(0x144)](_0x10ec3d(0x140))['textContent'];result['innerHTML']=_0x10ec3d(0x161)
+          +_0x11d6ec+_0x10ec3d(0x13a);const _0x1db183=this[_0x10ec3d(0x144)](_0x10ec3d(0x140))[_0x10ec3d(0x15f)];worth[_0x10ec3d(0x14c)]=_0x10ec3d(0x15e)
+          +_0x1db183+_0x10ec3d(0x15a);}),card3['addEventListener']('click',function(){const _0x4f2229=_0x2b5534,_0xde4174=this[_0x4f2229(0x144)]('.car
+          _0x4f2229(0x15f)];result[_0x4f2229(0x14c)]=_0x4f2229(0x161)+_0xde4174+_0x4f2229(0x13a);const _0x7f9167=this[_0x4f2229(0x144)](_0x4f2229(0x140))
+          [_0x4f2229(0x15f)];worth['innerHTML']='The\x20coin\x20worth\x20'+_0x7f9167+'\x20has\x20been\x20recharged\x20to\x20given\x20username\x20account.';}),
+          card4['addEventListener'](_0x2b5534(0x164),function(){const _0xdb8c9a=_0x2b5534,_0x5f29ea=this[_0xdb8c9a(0x144)]('.car')[_0xdb8c9a(0x15f)];result[_0xdb8c9a(0x14c)]=
+          _0xdb8c9a(0x161)+_0x5f29ea+_0xdb8c9a(0x13a);const _0x5ca644=this['querySelector'](_0xdb8c9a(0x140))[_0xdb8c9a(0x15f)];worth[_0xdb8c9a(0x14c)]=_0xdb8c9a(0x15e)
+          +_0x5ca644+_0xdb8c9a(0x15a);}),card5['addEventListener'](_0x2b5534(0x164),function(){const _0x14abb3=_0x2b5534,_0x3af4fd=this['querySelector'](_0x14abb3(0x140))
+          ['textContent'];result[_0x14abb3(0x14c)]=_0x14abb3(0x161)+_0x3af4fd+_0x14abb3(0x13a);const _0xcb2d36=this[_0x14abb3(0x144)]('.car')[_0x14abb3(0x15f)];worth[_0x14abb3(0x14c)]=_0x14abb3(0x15e)
+          +_0xcb2d36+_0x14abb3(0x15a);}),card6['addEventListener'](_0x2b5534(0x164),function(){const _0x16a472=_0x2b5534,_0x2b037f=this[_0x16a472(0x144)](_0x16a472(0x140))[_0x16a472(0x15f)];result[_0x16a472(0x14c)]
+            =_0x16a472(0x161)+_0x2b037f+_0x16a472(0x13a);const _0x102a4e=this['querySelector']('.car')['textContent'];worth[_0x16a472(0x14c)]=_0x16a472(0x15e)+_0x102a4e+'\x20has\x20been\x20recharged\x20to\x20given\
+            x20username\x20account.';}),card7[_0x2b5534(0x156)]('click',function(){const _0x19ab53=_0x2b5534,_0x4c8bce=this[_0x19ab53(0x144)](_0x19ab53(0x140))[_0x19ab53(0x15f)];result[_0x19ab53(0x14c)]=_0x19ab53(0x161)
+              +_0x4c8bce+_0x19ab53(0x13a);const _0x7806cc=this[_0x19ab53(0x144)]('.car')[_0x19ab53(0x15f)];worth['innerHTML']='The\x20coin\x20worth\x20'+_0x7806cc+'\x20has\x20been\x20recharged\x20to\x20given\x20username\x20account.';});
+              function _0x570f(_0xf212f9,_0x367d5d){const _0xa04a73=_0xa04a();return _0x570f=function(_0x570f5a,_0x3ec383){_0x570f5a=_0x570f5a-0x136;let _0x46f8fd=_0xa04a73[_0x570f5a];return _0x46f8fd;},_0x570f
+              (_0xf212f9,_0x367d5d);}function _0xa04a(){const _0x106818=['.car','toFixed','card8','1975902nqDHkp','querySelector','add','64860ioqhzo','from','value','.font-bold.text-gray-400','contains','872339ZzrzJr',
+              'innerHTML','card5','popup','input','hidden','classList','closeButton','card','getElementById','8arUeJM','addEventListener','outline-yellow','7AxHZRR','card3','\x20has\x20been\x20recharged\x20to\x20given\x20username\x20account.','card2','stopPropagation','1616670QrvasE','The\x20coin\x20worth\x20','textContent','Large\x20amount\x20supported','Total:\x20<span\x20style=\x22font-weight:\x20bold;\x22>','forEach','card1','click','remove','The\x20coin\x20worth\x20$\x20\x20','937758cQZoJJ','target','725260ZApCTD','getElementsByClassName','</span>','Total:$\x20\x20','openButton','13386546TDEJDK','card6','toggle']
+              ;_0xa04a=function(){return _0x106818;};return _0xa04a();}var card=document[_0x2b5534(0x154)](_0x2b5534(0x142)),customText=card[_0x2b5534(0x144)]('.pl-2.text-xl.font-bold'),inputField=card['querySelector']('input[type=\x22text\x22]'),supportedText=card[_0x2b5534(0x144)]
+              (_0x2b5534(0x149)),supportnumb=card[_0x2b5534(0x144)]('.numb');card[_0x2b5534(0x156)](_0x2b5534(0x164),function(_0x4a9773){const _0xb71f02=_0x2b5534;_0x4a9773[_0xb71f02(0x137)]===inputField?_0x4a9773[_0xb71f02(0x15c)]():
+                (customText[_0xb71f02(0x151)][_0xb71f02(0x13f)]('hidden'),inputField[_0xb71f02(0x151)]['toggle'](_0xb71f02(0x150)),supportedText[_0xb71f02(0x151)][_0xb71f02(0x13f)](_0xb71f02(0x150)),supportnumb[_0xb71f02(0x151)][_0xb71f02(0x13f)](_0xb71f02(0x150)));}),document[_0x2b5534(0x156)](_0x2b5534(0x164),
+                function(_0x4411da){const _0x420c7b=_0x2b5534;(!card[_0x420c7b(0x14a)](_0x4411da['target'])||_0x4411da[_0x420c7b(0x137)]===card)&&(customText[_0x420c7b(0x151)]['remove'](_0x420c7b(0x150)),inputField[_0x420c7b(0x151)][_0x420c7b(0x145)](_0x420c7b(0x150)),supportedText[_0x420c7b(0x15f)]=_0x420c7b(0x160));}),
+                card8['addEventListener'](_0x2b5534(0x14f),function(){const _0x133c76=_0x2b5534;var _0x2a282e=parseFloat(inputField[_0x133c76(0x148)]),_0x384339=_0x2a282e*0.00857142857;result[_0x133c76(0x15f)]=_0x133c76(0x13b)+_0x384339[_0x133c76(0x141)](0x2),worth[_0x133c76(0x15f)]=_0x133c76(0x166)+_0x384339[_0x133c76(0x141)]
+                  (0x2)+_0x133c76(0x15a);});
 
 
 
